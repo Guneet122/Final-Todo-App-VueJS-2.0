@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/linux
+cd /home/ec2-user
 npm run serve
