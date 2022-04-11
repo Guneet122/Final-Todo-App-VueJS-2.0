@@ -1,6 +1,6 @@
 #!/bin/bash
-
-cd /home/linux
+source /home/ec2-user/.bash_profile
+cd /home/ec2-user
 npm -v
 node -v
 nvm -v
