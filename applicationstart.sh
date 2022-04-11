@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /var/www/html/
-npm run serve
+pm2 start ecosystem.config.js
