@@ -4,6 +4,9 @@ files:
   - source: /
     destination: /home/linux
 hooks:
+  BeforeInstall:
+    - location: beforeinstall.sh
+      timeout: 100
   AfterInstall:
     - location: afterinstall.sh
       timeout: 100
