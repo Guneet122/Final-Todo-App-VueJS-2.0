@@ -4,5 +4,5 @@ cd /var/www/html/
 npm -v
 node -v
 nvm -v
-npm -f install
+npm install
 npm install pm2 -g
