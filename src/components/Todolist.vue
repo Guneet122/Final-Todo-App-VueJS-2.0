@@ -36,11 +36,12 @@ import CustomInput from "./CustomInput.vue";
 import axios from "axios";
 import Tracker from '@openreplay/tracker';
 import trackerAssist from '@openreplay/tracker-assist';
+import trackerAxios from '@openreplay/tracker-axios';
 
 const tracker = new Tracker({
-  projectKey: "MwakAOhZwJU4XGGBOlrr",  
+  projectKey: "Cxx6JHUX2mj7nr5UuC0P",  
 });
-tracker.use(trackerAssist);
+tracker.use(trackerAxios({instance: axios}));
 
 export default {
   name: "TodoList",
