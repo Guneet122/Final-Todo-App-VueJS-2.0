@@ -34,6 +34,13 @@
 import TodoItem from "./Todoitem.vue";
 import CustomInput from "./CustomInput.vue";
 import axios from "axios";
+import Tracker from '@openreplay/tracker';
+import trackerAssist from '@openreplay/tracker-assist';
+
+const tracker = new Tracker({
+  projectKey: "MwakAOhZwJU4XGGBOlrr",  
+});
+tracker.use(trackerAssist);
 
 export default {
   name: "TodoList",
@@ -42,6 +49,7 @@ export default {
     CustomInput,
   },
   beforeCreate() {
+    tracker.start();
     const fakeConfig = {
       method: "post",
       url: "/user/12345",
