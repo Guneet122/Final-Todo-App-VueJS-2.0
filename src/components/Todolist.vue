@@ -57,6 +57,7 @@ export default {
       baseURL: "/foo",
     };
     console.log(axios.getUri(fakeConfig));
+    axios.get('https://gorest.co.in/public/v2/posts/1227').then(res => { console.log(res) });
   },
   data() {
     return {
