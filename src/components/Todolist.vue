@@ -35,7 +35,7 @@ import TodoItem from "./Todoitem.vue";
 import CustomInput from "./CustomInput.vue";
 import axios from "axios";
 import Tracker from '@openreplay/tracker';
-import trackerAssist from '@openreplay/tracker-assist';
+// import trackerAssist from '@openreplay/tracker-assist';
 import trackerAxios from '@openreplay/tracker-axios';
 
 const tracker = new Tracker({
